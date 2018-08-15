@@ -9,8 +9,21 @@
 import UIKit
 
 class HomeViewController: BaseViewController {
+    
+    private var media = [MediaContent]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        fetchMediaContent()
+    }
+    
+    private func fetchMediaContent(){
+        ItunesServices.getContent(){(result: [MediaContent]?) in
+            if let result = result {
+                for item in result {
+                    self.media.append(item)
+                }
+            }
+        }
     }
 }

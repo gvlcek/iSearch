@@ -23,33 +23,13 @@
                                 <color key="tintColor" red="0.71055294689119175" green="0.69487296753698713" blue="0.53024015381063905" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <scopeButtonTitles>
-                                    <string>Title</string>
-                                    <string>Title</string>
+                                    <string>Music</string>
+                                    <string>TV Show</string>
+                                    <string>Movie</string>
                                 </scopeButtonTitles>
                             </searchBar>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LtU-O5-AkK">
-                                <rect key="frame" x="0.0" y="144" width="375" height="45"/>
-                                <subviews>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="LYB-3w-LFV">
-                                        <rect key="frame" x="16" y="8" width="343" height="29"/>
-                                        <segments>
-                                            <segment title="Music"/>
-                                            <segment title="TV Show"/>
-                                            <segment title="Movie"/>
-                                        </segments>
-                                        <color key="tintColor" red="0.84294041450777202" green="0.82182391440793479" blue="0.62395032003476736" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </segmentedControl>
-                                </subviews>
-                                <color key="backgroundColor" red="0.21176470589999999" green="0.21176470589999999" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstItem="LYB-3w-LFV" firstAttribute="leading" secondItem="LtU-O5-AkK" secondAttribute="leading" constant="16" id="Cyf-T0-BGp"/>
-                                    <constraint firstItem="LYB-3w-LFV" firstAttribute="top" secondItem="LtU-O5-AkK" secondAttribute="top" constant="8" id="FGN-Ww-id7"/>
-                                    <constraint firstAttribute="bottom" secondItem="LYB-3w-LFV" secondAttribute="bottom" constant="9" id="QXb-rK-e9C"/>
-                                    <constraint firstAttribute="trailing" secondItem="LYB-3w-LFV" secondAttribute="trailing" constant="16" id="bHE-Ki-R6O"/>
-                                </constraints>
-                            </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="POt-n5-5l0">
-                                <rect key="frame" x="0.0" y="189" width="375" height="589"/>
+                                <rect key="frame" x="0.0" y="144" width="375" height="634"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="RT9-A5-aNR">
@@ -65,11 +45,8 @@
                         </subviews>
                         <color key="backgroundColor" red="0.21176470589999999" green="0.21176470589999999" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="LtU-O5-AkK" firstAttribute="top" secondItem="f3R-T2-gLG" secondAttribute="bottom" id="4KG-Ti-V4m"/>
-                            <constraint firstItem="POt-n5-5l0" firstAttribute="top" secondItem="LtU-O5-AkK" secondAttribute="bottom" id="6ln-GQ-UP2"/>
                             <constraint firstItem="POt-n5-5l0" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ARf-yK-qK5"/>
-                            <constraint firstItem="LtU-O5-AkK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="YOB-Rd-B5A"/>
-                            <constraint firstItem="LtU-O5-AkK" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="baX-es-1uh"/>
+                            <constraint firstItem="POt-n5-5l0" firstAttribute="top" secondItem="f3R-T2-gLG" secondAttribute="bottom" id="RFB-Gg-qXB"/>
                             <constraint firstItem="f3R-T2-gLG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jbL-Jm-lJe"/>
                             <constraint firstItem="f3R-T2-gLG" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="nIg-0A-rWz"/>
                             <constraint firstItem="f3R-T2-gLG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="oel-4f-BvR"/>

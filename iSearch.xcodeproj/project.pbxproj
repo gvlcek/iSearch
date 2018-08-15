@@ -17,6 +17,8 @@
 		DD4D32982123C5BD00151C95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD4D32962123C5BD00151C95 /* LaunchScreen.storyboard */; };
 		DD4D32A32123C5BD00151C95 /* iSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4D32A22123C5BD00151C95 /* iSearchTests.swift */; };
 		DD4D32AE2123C5BD00151C95 /* iSearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4D32AD2123C5BD00151C95 /* iSearchUITests.swift */; };
+		DD8CD30121243BEF00DE2ECF /* MediaContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8CD30021243BEF00DE2ECF /* MediaContent.swift */; };
+		DD8CD3032124406500DE2ECF /* ItunesServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8CD3022124406500DE2ECF /* ItunesServices.swift */; };
 		FCE8948AE13195E360BADC99 /* Pods_iSearchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78917B195AEB285E2B9C697E /* Pods_iSearchUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +62,8 @@
 		DD4D32A92123C5BD00151C95 /* iSearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iSearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD4D32AD2123C5BD00151C95 /* iSearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iSearchUITests.swift; sourceTree = "<group>"; };
 		DD4D32AF2123C5BD00151C95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD8CD30021243BEF00DE2ECF /* MediaContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaContent.swift; sourceTree = "<group>"; };
+		DD8CD3022124406500DE2ECF /* ItunesServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesServices.swift; sourceTree = "<group>"; };
 		F7353DB87159935D58A1C3DF /* Pods-iSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSearch.release.xcconfig"; path = "Pods/Target Support Files/Pods-iSearch/Pods-iSearch.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,6 +121,7 @@
 		DD075EC22123C9F6007DAFA2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DD8CD30021243BEF00DE2ECF /* MediaContent.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -150,6 +155,7 @@
 		DD075EC62123CB00007DAFA2 /* WebServices */ = {
 			isa = PBXGroup;
 			children = (
+				DD8CD3022124406500DE2ECF /* ItunesServices.swift */,
 			);
 			path = WebServices;
 			sourceTree = "<group>";
@@ -420,9 +426,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD8CD30121243BEF00DE2ECF /* MediaContent.swift in Sources */,
 				DD4D32902123C5BC00151C95 /* BaseViewController.swift in Sources */,
 				DD4D328E2123C5BC00151C95 /* AppDelegate.swift in Sources */,
 				DD075ECA2123CC50007DAFA2 /* HomeViewController.swift in Sources */,
+				DD8CD3032124406500DE2ECF /* ItunesServices.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
