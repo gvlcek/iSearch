@@ -19,6 +19,7 @@
 		DD43AC9A2125DCC7005B1E7A /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DD43AC902125DCC6005B1E7A /* OpenSans-Italic.ttf */; };
 		DD43AC9B2125DCC7005B1E7A /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DD43AC912125DCC6005B1E7A /* OpenSans-LightItalic.ttf */; };
 		DD43AC9C2125DCC7005B1E7A /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DD43AC922125DCC7005B1E7A /* OpenSans-Bold.ttf */; };
+		DD43ACA2212617CE005B1E7A /* HomeTableViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD43ACA1212617CE005B1E7A /* HomeTableViewCells.swift */; };
 		DD4D328E2123C5BC00151C95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4D328D2123C5BC00151C95 /* AppDelegate.swift */; };
 		DD4D32902123C5BC00151C95 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4D328F2123C5BC00151C95 /* BaseTableViewController.swift */; };
 		DD4D32932123C5BC00151C95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD4D32912123C5BC00151C95 /* Main.storyboard */; };
@@ -68,6 +69,7 @@
 		DD43AC902125DCC6005B1E7A /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
 		DD43AC912125DCC6005B1E7A /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
 		DD43AC922125DCC7005B1E7A /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		DD43ACA1212617CE005B1E7A /* HomeTableViewCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCells.swift; sourceTree = "<group>"; };
 		DD4D328A2123C5BC00151C95 /* iSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD4D328D2123C5BC00151C95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD4D328F2123C5BC00151C95 /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 			children = (
 				DD4D328F2123C5BC00151C95 /* BaseTableViewController.swift */,
 				DDCAED6B2125293800E027B5 /* HomeTableViewController.swift */,
+				DD43ACA1212617CE005B1E7A /* HomeTableViewCells.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -466,6 +469,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD43ACA2212617CE005B1E7A /* HomeTableViewCells.swift in Sources */,
 				DDCAED6C2125293800E027B5 /* HomeTableViewController.swift in Sources */,
 				DD8CD30121243BEF00DE2ECF /* MediaContent.swift in Sources */,
 				DD4D32902123C5BC00151C95 /* BaseTableViewController.swift in Sources */,

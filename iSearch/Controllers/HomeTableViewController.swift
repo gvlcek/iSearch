@@ -34,7 +34,7 @@ class HomeTableViewController: BaseTableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "tvShowCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "musicCell", for: indexPath)
         return cell
     }
 
