@@ -8,14 +8,19 @@
 
 import UIKit
 
-class BaseViewController: UIViewController {
+class BaseTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.tableFooterView = UIView() //To prevent showing separators between empty cells
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    func reloadTableView() {
+        tableView.reloadData()
     }
 
 }
