@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -55,14 +54,14 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sIz-uH-nwu">
-                                            <rect key="frame" x="20" y="21" width="100" height="100"/>
+                                            <rect key="frame" x="20" y="10" width="100" height="100"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="100" id="Ev5-M4-FOn"/>
                                                 <constraint firstAttribute="height" constant="100" id="OoJ-94-nJh"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Episode:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5g1-ea-rnF">
-                                            <rect key="frame" x="130" y="51.666666666666657" width="235" height="70"/>
+                                            <rect key="frame" x="130" y="40.666666666666657" width="235" height="70"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" priority="749" constant="70" id="S7u-N8-wU6"/>
                                             </constraints>
@@ -70,15 +69,14 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="748" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YiY-Dd-akW">
-                                            <rect key="frame" x="20" y="131.66666666666666" width="345" height="93.333333333333343"/>
-                                            <string key="text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</string>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="748" text="&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&quot;" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YiY-Dd-akW">
+                                            <rect key="frame" x="20" y="120.66666666666669" width="345" height="104.33333333333331"/>
                                             <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Show:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="goq-8x-1SV">
-                                            <rect key="frame" x="130" y="21" width="235" height="20.666666666666671"/>
+                                            <rect key="frame" x="130" y="10.000000000000002" width="235" height="20.666666666666671"/>
                                             <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -87,14 +85,14 @@
                                     <constraints>
                                         <constraint firstAttribute="trailing" secondItem="goq-8x-1SV" secondAttribute="trailing" constant="10" id="2Fw-nK-nac"/>
                                         <constraint firstItem="goq-8x-1SV" firstAttribute="leading" secondItem="sIz-uH-nwu" secondAttribute="trailing" constant="10" id="5Xd-tG-vbA"/>
-                                        <constraint firstItem="YiY-Dd-akW" firstAttribute="top" relation="greaterThanOrEqual" secondItem="5g1-ea-rnF" secondAttribute="bottom" constant="10" id="653-Fe-oAb"/>
+                                        <constraint firstItem="YiY-Dd-akW" firstAttribute="top" secondItem="5g1-ea-rnF" secondAttribute="bottom" constant="10" id="653-Fe-oAb"/>
+                                        <constraint firstItem="sIz-uH-nwu" firstAttribute="top" secondItem="YVx-dy-spM" secondAttribute="top" constant="10" id="8Dw-OB-diC"/>
                                         <constraint firstItem="goq-8x-1SV" firstAttribute="top" secondItem="sIz-uH-nwu" secondAttribute="top" id="8yr-Vb-D3R"/>
                                         <constraint firstItem="5g1-ea-rnF" firstAttribute="trailing" secondItem="goq-8x-1SV" secondAttribute="trailing" id="EeD-5e-YrR"/>
                                         <constraint firstItem="sIz-uH-nwu" firstAttribute="leading" secondItem="YVx-dy-spM" secondAttribute="leading" constant="20" id="Fcc-OO-occ"/>
                                         <constraint firstItem="5g1-ea-rnF" firstAttribute="top" secondItem="goq-8x-1SV" secondAttribute="bottom" constant="10" id="Y6g-Ki-9QT"/>
                                         <constraint firstAttribute="trailing" secondItem="YiY-Dd-akW" secondAttribute="trailing" constant="10" id="amS-lr-K9q"/>
                                         <constraint firstItem="5g1-ea-rnF" firstAttribute="leading" secondItem="goq-8x-1SV" secondAttribute="leading" id="e0S-OF-pKg"/>
-                                        <constraint firstItem="sIz-uH-nwu" firstAttribute="top" secondItem="YVx-dy-spM" secondAttribute="topMargin" constant="10" id="pM2-zF-sKu"/>
                                         <constraint firstAttribute="bottom" secondItem="YiY-Dd-akW" secondAttribute="bottom" constant="10" id="plU-rc-WbQ"/>
                                         <constraint firstItem="YiY-Dd-akW" firstAttribute="leading" secondItem="YVx-dy-spM" secondAttribute="leading" constant="20" id="rqM-2c-BeX"/>
                                     </constraints>
@@ -106,8 +104,56 @@
                                     <outlet property="showTitleLabel" destination="goq-8x-1SV" id="cSy-LU-isc"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="musicCell" rowHeight="120" id="8WM-oG-Ppp">
-                                <rect key="frame" x="0.0" y="363" width="375" height="120"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="movieCell" rowHeight="235" id="BhC-7m-aeY" customClass="MovieCell" customModule="iSearch" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="363" width="375" height="235"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BhC-7m-aeY" id="iym-52-CLJ">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="234.66666666666666"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="d33-bA-khY">
+                                            <rect key="frame" x="20" y="10" width="100" height="100"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="100" id="F3F-mD-hPh"/>
+                                                <constraint firstAttribute="height" constant="100" id="mpF-oW-Sis"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Movie:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bzc-9U-ww5">
+                                            <rect key="frame" x="130" y="10" width="235" height="100"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" priority="749" constant="100" id="q66-0F-wEd"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="748" text="&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&quot;" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1M-Nk-xx2">
+                                            <rect key="frame" x="20" y="120" width="345" height="105"/>
+                                            <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="a1M-Nk-xx2" firstAttribute="leading" secondItem="iym-52-CLJ" secondAttribute="leading" constant="20" id="GQv-zU-Wvg"/>
+                                        <constraint firstAttribute="bottom" secondItem="a1M-Nk-xx2" secondAttribute="bottom" constant="10" id="Gbs-Oc-RlK"/>
+                                        <constraint firstItem="Bzc-9U-ww5" firstAttribute="leading" secondItem="d33-bA-khY" secondAttribute="trailing" constant="10" id="MCt-3N-xuO"/>
+                                        <constraint firstItem="d33-bA-khY" firstAttribute="top" secondItem="iym-52-CLJ" secondAttribute="top" constant="10" id="PRd-HP-knz"/>
+                                        <constraint firstItem="Bzc-9U-ww5" firstAttribute="top" secondItem="d33-bA-khY" secondAttribute="top" id="SMO-8m-QSY"/>
+                                        <constraint firstAttribute="trailing" secondItem="Bzc-9U-ww5" secondAttribute="trailing" constant="10" id="eOr-PQ-Elp"/>
+                                        <constraint firstItem="a1M-Nk-xx2" firstAttribute="top" secondItem="Bzc-9U-ww5" secondAttribute="bottom" constant="10" id="ftG-3a-Ctr"/>
+                                        <constraint firstAttribute="trailing" secondItem="a1M-Nk-xx2" secondAttribute="trailing" constant="10" id="r7z-bT-PeC"/>
+                                        <constraint firstItem="d33-bA-khY" firstAttribute="leading" secondItem="iym-52-CLJ" secondAttribute="leading" constant="20" id="rde-tF-kzH"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="movieDescriptionLabel" destination="a1M-Nk-xx2" id="IGp-c0-nwV"/>
+                                    <outlet property="movieImage" destination="d33-bA-khY" id="SYp-MZ-9K6"/>
+                                    <outlet property="movieTitleLabel" destination="Bzc-9U-ww5" id="0rG-6v-ceJ"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="musicCell" rowHeight="120" id="8WM-oG-Ppp" customClass="MusicCell" customModule="iSearch" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="598" width="375" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8WM-oG-Ppp" id="lBw-4q-0T0">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="119.66666666666667"/>
@@ -120,17 +166,17 @@
                                                 <constraint firstAttribute="width" constant="100" id="UGO-Fi-STD"/>
                                             </constraints>
                                         </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Track Name:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AfT-4e-MJF">
+                                            <rect key="frame" x="130" y="10.000000000000002" width="235" height="20.666666666666671"/>
+                                            <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Artist:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0xp-e5-zZQ">
                                             <rect key="frame" x="130" y="40.666666666666657" width="235" height="65"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" priority="748" constant="65" id="GL0-1V-Qiw"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Track Name:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AfT-4e-MJF">
-                                            <rect key="frame" x="130" y="10.000000000000002" width="235" height="20.666666666666671"/>
                                             <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -148,6 +194,11 @@
                                         <constraint firstItem="0xp-e5-zZQ" firstAttribute="top" secondItem="AfT-4e-MJF" secondAttribute="bottom" constant="10" id="wuw-KB-2WH"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="albumImage" destination="T4G-gM-Wap" id="ux3-wz-YBt"/>
+                                    <outlet property="artistLabel" destination="0xp-e5-zZQ" id="4Js-aj-9V2"/>
+                                    <outlet property="songTitleLabel" destination="AfT-4e-MJF" id="gl3-5J-zfR"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
