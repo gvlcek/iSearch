@@ -25,8 +25,9 @@ class ItunesServices: NSObject {
                 let resultsArray = (json as! NSDictionary).object(forKey: "results") as! NSArray
                 var returnList = [MediaContent]()
                 for case let item as NSDictionary in resultsArray {
-                    let curentItem = MediaContent(item)
-                    returnList.append(curentItem)
+                    let currentItem = MediaContent(item)
+                    currentItem.mediaType = mediaType
+                    returnList.append(currentItem)
                 }
                 completionHandler(returnList)
                 break

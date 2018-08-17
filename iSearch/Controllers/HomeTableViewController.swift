@@ -61,17 +61,20 @@ extension HomeTableViewController {
         let row = media[indexPath.row]
     
         switch row.mediaType {
-        case .music:
+        case .music?:
             let cell = tableView.dequeueReusableCell(withIdentifier: musicCellIdentifier, for: indexPath) as! MusicCell
             cell.setupCell(title: row.trackName ?? "" , artist: row.artistName ?? "")
             return cell
-        case .tvShow:
+        case .tvShow?:
             let cell = tableView.dequeueReusableCell(withIdentifier: tvShowCellIdentifier, for: indexPath) as! TvShowCell
             cell.setupCell(title: row.artistName ?? "", episode: row.trackName ?? "", sinopsis: row.longDescription ?? "")
             return cell
-        case .movie:
+        case .movie?:
             let cell = tableView.dequeueReusableCell(withIdentifier: movieCellIdentifier, for: indexPath) as! MovieCell
-            cell.setupCell(title: row.trackName ?? "", sinopsis: row.artistName ?? "")
+            cell.setupCell(title: row.trackName ?? "", sinopsis: row.longDescription ?? "")
+            return cell
+        case .none:
+            let cell = tableView.dequeueReusableCell(withIdentifier: musicCellIdentifier, for: indexPath) as! MusicCell
             return cell
         }
     }

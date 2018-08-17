@@ -19,7 +19,7 @@ class MediaContent: NSObject {
     var artworkUrl100: String?
     var longDescription: String?
     var artistName: String?
-    var mediaType = MediaType.tvShow
+    var mediaType: MediaType?
  
     convenience init(_ dict: NSDictionary) {
         self.init()
