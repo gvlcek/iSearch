@@ -29,12 +29,15 @@
                                 <searchBar contentMode="redraw" barStyle="black" placeholder="Search in iTunes" translucent="NO" showsScopeBar="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f3R-T2-gLG">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                                     <color key="tintColor" red="0.71055294689119175" green="0.69487296753698713" blue="0.53024015381063905" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <textInputTraits key="textInputTraits"/>
+                                    <textInputTraits key="textInputTraits" spellCheckingType="no" returnKeyType="search" smartInsertDeleteType="no" smartQuotesType="no"/>
                                     <scopeButtonTitles>
                                         <string>Music</string>
                                         <string>TV Show</string>
                                         <string>Movie</string>
                                     </scopeButtonTitles>
+                                    <connections>
+                                        <outlet property="delegate" destination="A7j-dC-nbi" id="OHq-DK-oox"/>
+                                    </connections>
                                 </searchBar>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -207,6 +210,7 @@
                         </connections>
                     </tableView>
                     <connections>
+                        <outlet property="searchBar" destination="f3R-T2-gLG" id="kJy-tE-fXR"/>
                         <outlet property="searchDisplayController" destination="L6i-5k-04d" id="SJf-z7-4zC"/>
                     </connections>
                 </tableViewController>

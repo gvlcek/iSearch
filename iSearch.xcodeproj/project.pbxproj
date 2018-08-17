@@ -185,12 +185,12 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		DD075EC62123CB00007DAFA2 /* WebServices */ = {
+		DD075EC62123CB00007DAFA2 /* Network */ = {
 			isa = PBXGroup;
 			children = (
 				DD8CD3022124406500DE2ECF /* ItunesServices.swift */,
 			);
-			path = WebServices;
+			path = Network;
 			sourceTree = "<group>";
 		};
 		DD4D32812123C5BC00151C95 = {
@@ -220,11 +220,11 @@
 			children = (
 				DD4D328D2123C5BC00151C95 /* AppDelegate.swift */,
 				DD4D32992123C5BD00151C95 /* Info.plist */,
-				DD075EC22123C9F6007DAFA2 /* Model */,
 				DD075EC42123CA21007DAFA2 /* Storyboards */,
+				DD075EC22123C9F6007DAFA2 /* Model */,
 				DD075EC32123CA12007DAFA2 /* Controllers */,
+				DD075EC62123CB00007DAFA2 /* Network */,
 				DD075EC52123CA70007DAFA2 /* Resources */,
-				DD075EC62123CB00007DAFA2 /* WebServices */,
 			);
 			path = iSearch;
 			sourceTree = "<group>";

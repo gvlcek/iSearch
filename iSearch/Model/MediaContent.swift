@@ -8,11 +8,19 @@
 
 import Foundation
 
+enum MediaType: String {
+    case tvShow = "tvShow"
+    case movie = "movie"
+    case music = "music"
+    case empty = ""
+}
+
 class MediaContent: NSObject {
     var trackName: String?
     var artworkUrl100: String?
     var longDescription: String?
     var artistName: String?
+    var mediaType: MediaType?
  
     convenience init(_ dict: NSDictionary) {
         self.init()

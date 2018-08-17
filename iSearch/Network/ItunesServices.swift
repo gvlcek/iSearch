@@ -9,13 +9,14 @@
 import Foundation
 import Alamofire
 
+private let GET_CONTENT = "https://itunes.apple.com/search"
+
 class ItunesServices: NSObject {
-    private static let GET_CONTENT = "https://itunes.apple.com/search"
     
-    static func getContent(completionHandler: @escaping ([MediaContent]?) -> ()){
+    static func getContent(mediaType: MediaType, searchTerm: String, completionHandler: @escaping ([MediaContent]?) -> ()){
         let parameters: Parameters = [
-            "term": "House",
-            "media": "tvShow",
+            "term": searchTerm,
+            "media": mediaType.rawValue,
         ]
         
         Alamofire.request(GET_CONTENT, method: .get, parameters: parameters).responseJSON {
