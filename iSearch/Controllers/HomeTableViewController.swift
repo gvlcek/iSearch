@@ -8,67 +8,75 @@
 
 import UIKit
 
-class HomeTableViewController: BaseTableViewController, UISearchBarDelegate {
+class HomeTableViewController: BaseTableViewController {
     
     fileprivate var media = [MediaContent]()
     @IBOutlet private weak var searchBar: UISearchBar!
     
-    enum ScopeIndexes: Int {
-        case musicIndex = 0
-        case tvShowIndex = 1
-        case movieIndex = 2
-    }
+    fileprivate let tvShowCellIdentifier = "tvShowCell"
+    fileprivate let movieCellIdentifier = "movieCell"
+    fileprivate let musicCellIdentifier = "musicCell"
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
-    func getMediaType() -> MediaType {
-        if searchBar.selectedScopeButtonIndex == ScopeIndexes.musicIndex.rawValue {
-            return .music
-        } else if searchBar.selectedScopeButtonIndex == ScopeIndexes.tvShowIndex.rawValue {
-            return .tvShow
-        } else if searchBar.selectedScopeButtonIndex == ScopeIndexes.movieIndex.rawValue {
-            return .movie
-        } else {
-            return .empty
-        }
+    func searchBar(_ searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
+        media = [MediaContent]()
+        reloadTableView()
     }
- 
+}
+
+extension HomeTableViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        showLoading()
         if let searchTerm = searchBar.text {
-            ItunesServices.getContent(mediaType: getMediaType(), searchTerm: searchTerm){ [weak self]
+            ItunesServices.getContent(mediaType: getMediaType(searchBar), searchTerm: searchTerm){ [weak self]
                 responseObject in
                 guard let strongSelf = self else { return }
                 if let responseObject = responseObject {
                     strongSelf.media = responseObject
+                    strongSelf.reloadTableView()
+                    strongSelf.hideLoading()
                 }
             }
         }
         
         searchBar.resignFirstResponder()
     }
-    
-    func searchBar(_ searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
-        print("CLEAR")
-    }
-    
-    // MARK: - Table view data source
+}
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+extension HomeTableViewController {
+    // MARK: - Table view data source
+    
+    override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
-
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return media.count
+    }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        //switch item.mediaType { }
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: "movieCell", for: indexPath)
-        return cell
+        let row = media[indexPath.row]
+    
+        switch row.mediaType {
+        case .music:
+            let cell = tableView.dequeueReusableCell(withIdentifier: musicCellIdentifier, for: indexPath) as! MusicCell
+            cell.setupCell(title: row.trackName ?? "" , artist: row.artistName ?? "")
+            return cell
+        case .tvShow:
+            let cell = tableView.dequeueReusableCell(withIdentifier: tvShowCellIdentifier, for: indexPath) as! TvShowCell
+            cell.setupCell(title: row.artistName ?? "", episode: row.trackName ?? "", sinopsis: row.longDescription ?? "")
+            return cell
+        case .movie:
+            let cell = tableView.dequeueReusableCell(withIdentifier: movieCellIdentifier, for: indexPath) as! MovieCell
+            cell.setupCell(title: row.trackName ?? "", sinopsis: row.artistName ?? "")
+            return cell
+        }
     }
-
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("print!")
+        
     }
-
 }

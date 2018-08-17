@@ -30,6 +30,7 @@
 		DD8CD30121243BEF00DE2ECF /* MediaContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8CD30021243BEF00DE2ECF /* MediaContent.swift */; };
 		DD8CD3032124406500DE2ECF /* ItunesServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8CD3022124406500DE2ECF /* ItunesServices.swift */; };
 		DDCAED6C2125293800E027B5 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCAED6B2125293800E027B5 /* HomeTableViewController.swift */; };
+		DDE8DD24212665E4008CA1F3 /* AuxiliarFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE8DD23212665E4008CA1F3 /* AuxiliarFunctions.swift */; };
 		FCE8948AE13195E360BADC99 /* Pods_iSearchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78917B195AEB285E2B9C697E /* Pods_iSearchUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +87,7 @@
 		DD8CD30021243BEF00DE2ECF /* MediaContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaContent.swift; sourceTree = "<group>"; };
 		DD8CD3022124406500DE2ECF /* ItunesServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesServices.swift; sourceTree = "<group>"; };
 		DDCAED6B2125293800E027B5 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		DDE8DD23212665E4008CA1F3 /* AuxiliarFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuxiliarFunctions.swift; sourceTree = "<group>"; };
 		F7353DB87159935D58A1C3DF /* Pods-iSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSearch.release.xcconfig"; path = "Pods/Target Support Files/Pods-iSearch/Pods-iSearch.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -170,6 +172,7 @@
 		DD075EC52123CA70007DAFA2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				DDE8DD23212665E4008CA1F3 /* AuxiliarFunctions.swift */,
 				DD4D32942123C5BD00151C95 /* Assets.xcassets */,
 				DD43AC922125DCC7005B1E7A /* OpenSans-Bold.ttf */,
 				DD43AC8B2125DCC4005B1E7A /* OpenSans-BoldItalic.ttf */,
@@ -475,6 +478,7 @@
 				DD4D32902123C5BC00151C95 /* BaseTableViewController.swift in Sources */,
 				DD4D328E2123C5BC00151C95 /* AppDelegate.swift in Sources */,
 				DD8CD3032124406500DE2ECF /* ItunesServices.swift in Sources */,
+				DDE8DD24212665E4008CA1F3 /* AuxiliarFunctions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

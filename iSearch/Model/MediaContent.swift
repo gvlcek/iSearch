@@ -12,7 +12,6 @@ enum MediaType: String {
     case tvShow = "tvShow"
     case movie = "movie"
     case music = "music"
-    case empty = ""
 }
 
 class MediaContent: NSObject {
@@ -20,7 +19,7 @@ class MediaContent: NSObject {
     var artworkUrl100: String?
     var longDescription: String?
     var artistName: String?
-    var mediaType: MediaType?
+    var mediaType = MediaType.tvShow
  
     convenience init(_ dict: NSDictionary) {
         self.init()
