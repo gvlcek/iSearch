@@ -186,10 +186,10 @@
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="T4G-gM-Wap" firstAttribute="top" secondItem="lBw-4q-0T0" secondAttribute="top" constant="10" id="2RP-rP-FIq"/>
                                         <constraint firstItem="0xp-e5-zZQ" firstAttribute="trailing" secondItem="AfT-4e-MJF" secondAttribute="trailing" id="Pc0-0G-RhU"/>
                                         <constraint firstAttribute="trailing" secondItem="AfT-4e-MJF" secondAttribute="trailing" constant="10" id="a9Z-le-amd"/>
                                         <constraint firstItem="AfT-4e-MJF" firstAttribute="top" secondItem="T4G-gM-Wap" secondAttribute="top" id="bWT-3t-LTi"/>
+                                        <constraint firstItem="T4G-gM-Wap" firstAttribute="centerY" secondItem="lBw-4q-0T0" secondAttribute="centerY" id="h73-fY-qBU"/>
                                         <constraint firstItem="T4G-gM-Wap" firstAttribute="leading" secondItem="lBw-4q-0T0" secondAttribute="leading" constant="20" id="hCl-1b-Uqj"/>
                                         <constraint firstItem="0xp-e5-zZQ" firstAttribute="leading" secondItem="AfT-4e-MJF" secondAttribute="leading" id="jlt-U5-hsY"/>
                                         <constraint firstAttribute="bottom" secondItem="0xp-e5-zZQ" secondAttribute="bottom" constant="14.000000000000014" id="k7P-d1-VBk"/>

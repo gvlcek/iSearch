@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 enum MediaType: String {
     case tvShow = "tvShow"
@@ -19,6 +20,8 @@ class MediaContent: NSObject {
     var artworkUrl100: String?
     var longDescription: String?
     var artistName: String?
+    var previewUrl: String?
+    var imageResult = UIImage()
     var mediaType: MediaType?
  
     convenience init(_ dict: NSDictionary) {
@@ -35,6 +38,9 @@ class MediaContent: NSObject {
         }
         if let artistName = dict.object(forKey: "artistName") as? String {
             self.artistName = artistName
+        }
+        if let previewUrl = dict.object(forKey: "previewUrl") as? String {
+            self.previewUrl = previewUrl
         }
     }
 }

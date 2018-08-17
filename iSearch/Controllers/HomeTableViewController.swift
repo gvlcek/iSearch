@@ -41,7 +41,6 @@ extension HomeTableViewController: UISearchBarDelegate {
                 }
             }
         }
-        
         searchBar.resignFirstResponder()
     }
 }
@@ -80,6 +79,6 @@ extension HomeTableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        reloadTableView()
     }
 }

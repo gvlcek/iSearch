@@ -8,6 +8,8 @@
 
 import Foundation
 import UIKit
+import AlamofireImage
+import Alamofire
 
 enum ScopeIndexes: Int {
     case musicIndex = 0
@@ -24,6 +26,16 @@ func getMediaType(_ searchBar: UISearchBar) -> MediaType {
     case ScopeIndexes.movieIndex.rawValue:
         return .movie
     default:
-        return .music
+        return .tvShow
     }
+}
+
+func downloadImage(url: String) -> UIImage {
+    var imageResult = UIImage()
+        Alamofire.request(url).responseImage { response in
+            if let image = response.result.value {
+                imageResult = image
+            }
+        }
+    return imageResult
 }
