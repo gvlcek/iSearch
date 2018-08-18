@@ -24,6 +24,7 @@ class HomeTableViewController: BaseTableViewController {
     func searchBar(_ searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
         media = [MediaContent]()
         reloadTableView()
+        searchBar.text = ""
     }
 }
 
@@ -62,15 +63,15 @@ extension HomeTableViewController {
         switch row.mediaType {
         case .music?:
             let cell = tableView.dequeueReusableCell(withIdentifier: musicCellIdentifier, for: indexPath) as! MusicCell
-            cell.setupCell(title: row.trackName ?? "" , artist: row.artistName ?? "")
+            cell.setupCell(title: row.trackName ?? "" , artist: row.artistName ?? "", url: row.artworkUrl100 ?? "")
             return cell
         case .tvShow?:
             let cell = tableView.dequeueReusableCell(withIdentifier: tvShowCellIdentifier, for: indexPath) as! TvShowCell
-            cell.setupCell(title: row.artistName ?? "", episode: row.trackName ?? "", sinopsis: row.longDescription ?? "")
+            cell.setupCell(title: row.artistName ?? "", episode: row.trackName ?? "", sinopsis: row.longDescription ?? "", url: row.artworkUrl100 ?? "")
             return cell
         case .movie?:
             let cell = tableView.dequeueReusableCell(withIdentifier: movieCellIdentifier, for: indexPath) as! MovieCell
-            cell.setupCell(title: row.trackName ?? "", sinopsis: row.longDescription ?? "")
+            cell.setupCell(title: row.trackName ?? "", sinopsis: row.longDescription ?? "", url: row.artworkUrl100 ?? "")
             return cell
         case .none:
             let cell = tableView.dequeueReusableCell(withIdentifier: musicCellIdentifier, for: indexPath) as! MusicCell

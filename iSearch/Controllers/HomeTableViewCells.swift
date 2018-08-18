@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Alamofire
+import AlamofireImage
 
 class TvShowCell: UITableViewCell {
     
@@ -15,8 +17,10 @@ class TvShowCell: UITableViewCell {
     @IBOutlet private weak var showEpisodeLabel: UILabel!
     @IBOutlet private weak var showDescriptionLabel: UILabel!
     
-    func setupCell(title: String, episode: String, sinopsis: String){
-        //showImage
+    func setupCell(title: String, episode: String, sinopsis: String, url: String){
+        let imageURL = URL(string: url)
+        guard let image = imageURL else { return }
+        showImage.af_setImage(withURL: image, placeholderImage: #imageLiteral(resourceName: "placeholder"))
         showTitleLabel.text = "Show: " + title
         showEpisodeLabel.text = "Episode: " + episode
         showDescriptionLabel.text = sinopsis
@@ -32,8 +36,10 @@ class MovieCell: UITableViewCell {
     @IBOutlet private weak var movieTitleLabel: UILabel!
     @IBOutlet private weak var movieDescriptionLabel: UILabel!
     
-    func setupCell(title: String, sinopsis: String){
-        //movieImage
+    func setupCell(title: String, sinopsis: String, url: String){
+        let imageURL = URL(string: url)
+        guard let image = imageURL else { return }
+        movieImage.af_setImage(withURL: image, placeholderImage: #imageLiteral(resourceName: "placeholder"))
         movieTitleLabel.text = "Movie: " + title
         movieDescriptionLabel.text = sinopsis
     }
@@ -52,8 +58,10 @@ class MusicCell: UITableViewCell {
         super.awakeFromNib()
     }
     
-    func setupCell(title: String, artist: String){
-        //albumImage
+    func setupCell(title: String, artist: String, url: String){
+        let imageURL = URL(string: url)
+        guard let image = imageURL else { return }
+        albumImage.af_setImage(withURL: image, placeholderImage: #imageLiteral(resourceName: "placeholder"))
         songTitleLabel.text = "Track Name: " + title
         artistLabel.text = "Artist: " + artist
     }
