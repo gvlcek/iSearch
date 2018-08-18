@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVKit
 
 class HomeTableViewController: BaseTableViewController {
     
@@ -90,7 +91,16 @@ extension HomeTableViewController {
 extension HomeTableViewController: MediaContentCellDelegate {
     
     func playMedia(url: String) {
-        print(url)
+        let mediaUrl = URL(string: url)
+        if let mediaUrl = mediaUrl {
+            let mediaFile = AVPlayer(url: mediaUrl)
+            let mediaPlayer = AVPlayerViewController()
+            mediaPlayer.player = mediaFile
+            
+            present(mediaPlayer, animated: true, completion: {
+                    mediaFile.play()
+            })
+        }
     }
     
 }
