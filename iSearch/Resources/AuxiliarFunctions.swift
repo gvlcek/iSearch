@@ -27,3 +27,4 @@ func getMediaType(_ searchBar: UISearchBar) -> MediaType {
         return .tvShow
     }
 }
+

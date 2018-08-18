@@ -21,7 +21,6 @@ class MediaContent: NSObject {
     var longDescription: String?
     var artistName: String?
     var previewUrl: String?
-    var imageResult = UIImage()
     var mediaType: MediaType?
  
     convenience init(_ dict: NSDictionary) {

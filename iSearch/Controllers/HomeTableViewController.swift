@@ -63,15 +63,18 @@ extension HomeTableViewController {
         switch row.mediaType {
         case .music?:
             let cell = tableView.dequeueReusableCell(withIdentifier: musicCellIdentifier, for: indexPath) as! MusicCell
-            cell.setupCell(title: row.trackName ?? "" , artist: row.artistName ?? "", url: row.artworkUrl100 ?? "")
+            cell.setupCell(title: row.trackName ?? "" , artist: row.artistName ?? "", artworkUrl: row.artworkUrl100 ?? "", previewUrl: row.previewUrl ?? "")
+            cell.delegate = self
             return cell
         case .tvShow?:
             let cell = tableView.dequeueReusableCell(withIdentifier: tvShowCellIdentifier, for: indexPath) as! TvShowCell
-            cell.setupCell(title: row.artistName ?? "", episode: row.trackName ?? "", sinopsis: row.longDescription ?? "", url: row.artworkUrl100 ?? "")
+            cell.setupCell(title: row.artistName ?? "", episode: row.trackName ?? "", sinopsis: row.longDescription ?? "", artworkUrl: row.artworkUrl100 ?? "", previewUrl: row.previewUrl ?? "")
+            cell.delegate = self
             return cell
         case .movie?:
             let cell = tableView.dequeueReusableCell(withIdentifier: movieCellIdentifier, for: indexPath) as! MovieCell
-            cell.setupCell(title: row.trackName ?? "", sinopsis: row.longDescription ?? "", url: row.artworkUrl100 ?? "")
+            cell.setupCell(title: row.trackName ?? "", sinopsis: row.longDescription ?? "", artworkUrl: row.artworkUrl100 ?? "", previewUrl: row.previewUrl ?? "")
+            cell.delegate = self
             return cell
         case .none:
             let cell = tableView.dequeueReusableCell(withIdentifier: musicCellIdentifier, for: indexPath) as! MusicCell
@@ -82,4 +85,12 @@ extension HomeTableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         reloadTableView()
     }
+}
+
+extension HomeTableViewController: MediaContentCellDelegate {
+    
+    func playMedia(url: String) {
+        print(url)
+    }
+    
 }
