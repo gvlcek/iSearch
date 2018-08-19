@@ -24,24 +24,13 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="RuG-3X-kNT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="FtP-i2-rKK">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="144"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hd4-hZ-Sqb">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <textAttributes key="titleTextAttributes">
-                                        <color key="textColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </textAttributes>
-                                    <items>
-                                        <navigationItem title="iTunes Seach" id="jRT-LJ-DWn"/>
-                                    </items>
-                                </navigationBar>
                                 <searchBar contentMode="redraw" placeholder="Search in iTunes" translucent="NO" showsScopeBar="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f3R-T2-gLG">
-                                    <rect key="frame" x="0.0" y="44" width="375" height="100"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="barTintColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <textInputTraits key="textInputTraits" spellCheckingType="no" returnKeyType="search" smartInsertDeleteType="no" smartQuotesType="no"/>
@@ -57,18 +46,15 @@
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
-                                <constraint firstItem="f3R-T2-gLG" firstAttribute="top" secondItem="hd4-hZ-Sqb" secondAttribute="bottom" id="JE2-vM-WS8"/>
-                                <constraint firstItem="hd4-hZ-Sqb" firstAttribute="top" secondItem="FtP-i2-rKK" secondAttribute="top" id="UrG-8N-XRn"/>
-                                <constraint firstItem="hd4-hZ-Sqb" firstAttribute="leading" secondItem="FtP-i2-rKK" secondAttribute="leading" id="bI8-kr-Gzb"/>
-                                <constraint firstAttribute="bottom" secondItem="f3R-T2-gLG" secondAttribute="bottom" id="diG-KC-P09"/>
-                                <constraint firstAttribute="trailing" secondItem="hd4-hZ-Sqb" secondAttribute="trailing" id="lr1-XF-oHj"/>
                                 <constraint firstItem="f3R-T2-gLG" firstAttribute="leading" secondItem="FtP-i2-rKK" secondAttribute="leading" id="pb3-qB-Ug7"/>
+                                <constraint firstItem="f3R-T2-gLG" firstAttribute="top" secondItem="FtP-i2-rKK" secondAttribute="top" id="qpz-Q6-6nU"/>
                                 <constraint firstAttribute="trailing" secondItem="f3R-T2-gLG" secondAttribute="trailing" id="vNu-SA-004"/>
+                                <constraint firstAttribute="bottom" secondItem="f3R-T2-gLG" secondAttribute="bottom" id="z9f-8z-oPH"/>
                             </constraints>
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="tvShowCell" rowHeight="191" id="VVH-FY-2Mu" customClass="TvShowCell" customModule="iSearch" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="172" width="375" height="191"/>
+                                <rect key="frame" x="0.0" y="128" width="375" height="191"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VVH-FY-2Mu" id="YVx-dy-spM">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="191"/>
@@ -123,6 +109,7 @@
                                             </constraints>
                                         </view>
                                     </subviews>
+                                    <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="0.10680650680000001" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="trailing" secondItem="fyi-5f-lb1" secondAttribute="trailing" constant="10" id="5C7-lz-gZz"/>
                                         <constraint firstItem="goq-8x-1SV" firstAttribute="leading" secondItem="sIz-uH-nwu" secondAttribute="trailing" constant="10" id="5Xd-tG-vbA"/>
@@ -151,7 +138,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="movieCell" rowHeight="182" id="BhC-7m-aeY" customClass="MovieCell" customModule="iSearch" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="363" width="375" height="182"/>
+                                <rect key="frame" x="0.0" y="319" width="375" height="182"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BhC-7m-aeY" id="iym-52-CLJ">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="182"/>
@@ -200,6 +187,7 @@
                                             </connections>
                                         </button>
                                     </subviews>
+                                    <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="0.10680650680000001" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstItem="Bzc-9U-ww5" firstAttribute="top" secondItem="iym-52-CLJ" secondAttribute="top" constant="8" id="2MH-Uq-KSp"/>
                                         <constraint firstAttribute="trailing" secondItem="Ehd-OD-zpq" secondAttribute="trailing" id="2ea-qe-RRp"/>
@@ -224,7 +212,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="musicCell" rowHeight="84" id="8WM-oG-Ppp" customClass="MusicCell" customModule="iSearch" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="545" width="375" height="84"/>
+                                <rect key="frame" x="0.0" y="501" width="375" height="84"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8WM-oG-Ppp" id="lBw-4q-0T0">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="84"/>
@@ -271,7 +259,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="0.10680650684931507" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstItem="AfT-4e-MJF" firstAttribute="leading" secondItem="T4G-gM-Wap" secondAttribute="trailing" constant="5" id="4DX-Xe-Mft"/>
                                         <constraint firstAttribute="bottom" secondItem="wlA-xh-dm6" secondAttribute="bottom" id="7rU-5E-Xbs"/>
@@ -307,7 +295,6 @@
                     <connections>
                         <outlet property="searchBar" destination="f3R-T2-gLG" id="kJy-tE-fXR"/>
                         <outlet property="searchDisplayController" destination="L6i-5k-04d" id="SJf-z7-4zC"/>
-                        <outlet property="titleBar" destination="hd4-hZ-Sqb" id="wIb-Un-Afb"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zLL-FR-i6q" userLabel="First Responder" sceneMemberID="firstResponder"/>
