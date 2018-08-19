@@ -25,23 +25,14 @@
 		DD4D32952123C5BD00151C95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD4D32942123C5BD00151C95 /* Assets.xcassets */; };
 		DD4D32982123C5BD00151C95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD4D32962123C5BD00151C95 /* LaunchScreen.storyboard */; };
 		DD4D32A32123C5BD00151C95 /* iSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4D32A22123C5BD00151C95 /* iSearchTests.swift */; };
-		DD4D32AE2123C5BD00151C95 /* iSearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4D32AD2123C5BD00151C95 /* iSearchUITests.swift */; };
 		DD8CD30121243BEF00DE2ECF /* MediaContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8CD30021243BEF00DE2ECF /* MediaContent.swift */; };
 		DD8CD3032124406500DE2ECF /* ItunesServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8CD3022124406500DE2ECF /* ItunesServices.swift */; };
 		DDCAED6C2125293800E027B5 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCAED6B2125293800E027B5 /* HomeTableViewController.swift */; };
 		DDE8DD24212665E4008CA1F3 /* AuxiliarFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE8DD23212665E4008CA1F3 /* AuxiliarFunctions.swift */; };
-		FCE8948AE13195E360BADC99 /* Pods_iSearchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78917B195AEB285E2B9C697E /* Pods_iSearchUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		DD4D329F2123C5BD00151C95 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DD4D32822123C5BC00151C95 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DD4D32892123C5BC00151C95;
-			remoteInfo = iSearch;
-		};
-		DD4D32AA2123C5BD00151C95 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DD4D32822123C5BC00151C95 /* Project object */;
 			proxyType = 1;
@@ -79,9 +70,6 @@
 		DD4D329E2123C5BD00151C95 /* iSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD4D32A22123C5BD00151C95 /* iSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iSearchTests.swift; sourceTree = "<group>"; };
 		DD4D32A42123C5BD00151C95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DD4D32A92123C5BD00151C95 /* iSearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iSearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DD4D32AD2123C5BD00151C95 /* iSearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iSearchUITests.swift; sourceTree = "<group>"; };
-		DD4D32AF2123C5BD00151C95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD8CD30021243BEF00DE2ECF /* MediaContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaContent.swift; sourceTree = "<group>"; };
 		DD8CD3022124406500DE2ECF /* ItunesServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesServices.swift; sourceTree = "<group>"; };
 		DDCAED6B2125293800E027B5 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
@@ -103,14 +91,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B330FCC81C30F9CCB8E1980 /* Pods_iSearchTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DD4D32A62123C5BD00151C95 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FCE8948AE13195E360BADC99 /* Pods_iSearchUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,7 +178,6 @@
 			children = (
 				DD4D328C2123C5BC00151C95 /* iSearch */,
 				DD4D32A12123C5BD00151C95 /* iSearchTests */,
-				DD4D32AC2123C5BD00151C95 /* iSearchUITests */,
 				DD4D328B2123C5BC00151C95 /* Products */,
 				470EB84AEFAD30009AF5D0AA /* Pods */,
 				B1F50561019C29F78A1F7DE7 /* Frameworks */,
@@ -210,7 +189,6 @@
 			children = (
 				DD4D328A2123C5BC00151C95 /* iSearch.app */,
 				DD4D329E2123C5BD00151C95 /* iSearchTests.xctest */,
-				DD4D32A92123C5BD00151C95 /* iSearchUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -236,15 +214,6 @@
 				DD4D32A42123C5BD00151C95 /* Info.plist */,
 			);
 			path = iSearchTests;
-			sourceTree = "<group>";
-		};
-		DD4D32AC2123C5BD00151C95 /* iSearchUITests */ = {
-			isa = PBXGroup;
-			children = (
-				DD4D32AD2123C5BD00151C95 /* iSearchUITests.swift */,
-				DD4D32AF2123C5BD00151C95 /* Info.plist */,
-			);
-			path = iSearchUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,25 +257,6 @@
 			productReference = DD4D329E2123C5BD00151C95 /* iSearchTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		DD4D32A82123C5BD00151C95 /* iSearchUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DD4D32B82123C5BD00151C95 /* Build configuration list for PBXNativeTarget "iSearchUITests" */;
-			buildPhases = (
-				A7B2A13A0D67C5636811971A /* [CP] Check Pods Manifest.lock */,
-				DD4D32A52123C5BD00151C95 /* Sources */,
-				DD4D32A62123C5BD00151C95 /* Frameworks */,
-				DD4D32A72123C5BD00151C95 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DD4D32AB2123C5BD00151C95 /* PBXTargetDependency */,
-			);
-			name = iSearchUITests;
-			productName = iSearchUITests;
-			productReference = DD4D32A92123C5BD00151C95 /* iSearchUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -321,10 +271,6 @@
 						CreatedOnToolsVersion = 9.4.1;
 					};
 					DD4D329D2123C5BD00151C95 = {
-						CreatedOnToolsVersion = 9.4.1;
-						TestTargetID = DD4D32892123C5BC00151C95;
-					};
-					DD4D32A82123C5BD00151C95 = {
 						CreatedOnToolsVersion = 9.4.1;
 						TestTargetID = DD4D32892123C5BC00151C95;
 					};
@@ -345,7 +291,6 @@
 			targets = (
 				DD4D32892123C5BC00151C95 /* iSearch */,
 				DD4D329D2123C5BD00151C95 /* iSearchTests */,
-				DD4D32A82123C5BD00151C95 /* iSearchUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -377,13 +322,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DD4D32A72123C5BD00151C95 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -399,24 +337,6 @@
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-iSearch-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A7B2A13A0D67C5636811971A /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-iSearchUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -486,14 +406,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DD4D32A52123C5BD00151C95 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DD4D32AE2123C5BD00151C95 /* iSearchUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -501,11 +413,6 @@
 			isa = PBXTargetDependency;
 			target = DD4D32892123C5BC00151C95 /* iSearch */;
 			targetProxy = DD4D329F2123C5BD00151C95 /* PBXContainerItemProxy */;
-		};
-		DD4D32AB2123C5BD00151C95 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DD4D32892123C5BC00151C95 /* iSearch */;
-			targetProxy = DD4D32AA2123C5BD00151C95 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -725,48 +632,6 @@
 			};
 			name = Release;
 		};
-		DD4D32B92123C5BD00151C95 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 41D37F91D68A5317F6F14C06 /* Pods-iSearchUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 363T9DTZQA;
-				INFOPLIST_FILE = iSearchUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = gvlcek.iSearchUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = iSearch;
-			};
-			name = Debug;
-		};
-		DD4D32BA2123C5BD00151C95 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7D15029A67CD8680EACD3022 /* Pods-iSearchUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 363T9DTZQA;
-				INFOPLIST_FILE = iSearchUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = gvlcek.iSearchUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = iSearch;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -793,15 +658,6 @@
 			buildConfigurations = (
 				DD4D32B62123C5BD00151C95 /* Debug */,
 				DD4D32B72123C5BD00151C95 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DD4D32B82123C5BD00151C95 /* Build configuration list for PBXNativeTarget "iSearchUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DD4D32B92123C5BD00151C95 /* Debug */,
-				DD4D32BA2123C5BD00151C95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -13,6 +13,7 @@ class HomeTableViewController: BaseTableViewController {
     
     fileprivate var media = [MediaContent]()
     @IBOutlet private weak var searchBar: UISearchBar!
+    @IBOutlet weak var titleBar: UINavigationBar!
     
     fileprivate let tvShowCellIdentifier = "tvShowCell"
     fileprivate let movieCellIdentifier = "movieCell"
@@ -20,6 +21,8 @@ class HomeTableViewController: BaseTableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        searchBar.layer.borderWidth = 1
+        searchBar.layer.borderColor = searchBar.barTintColor?.cgColor
     }
     
     func searchBar(_ searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {

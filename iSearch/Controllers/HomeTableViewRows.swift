@@ -34,7 +34,7 @@ class TvShowCell: MediaContentCell {
         let imageURL = URL(string: artworkUrl)
         guard let image = imageURL else { return }
         showImage.af_setImage(withURL: image, placeholderImage: #imageLiteral(resourceName: "placeholder"))
-        showTitleLabel.text = "Show: " + title
+        showTitleLabel.text = title
         showEpisodeLabel.text = "Episode: " + episode
         showDescriptionLabel.text = sinopsis
         mediaURL = previewUrl
@@ -60,7 +60,7 @@ class MovieCell: MediaContentCell {
         let imageURL = URL(string: artworkUrl)
         guard let image = imageURL else { return }
         movieImage.af_setImage(withURL: image, placeholderImage: #imageLiteral(resourceName: "placeholder"))
-        movieTitleLabel.text = "Movie: " + title
+        movieTitleLabel.text = title
         movieDescriptionLabel.text = sinopsis
         mediaURL = previewUrl
     }
@@ -76,6 +76,8 @@ class MusicCell: MediaContentCell {
     @IBOutlet private weak var albumImage: UIImageView!
     @IBOutlet private weak var songTitleLabel: UILabel!
     @IBOutlet private weak var artistLabel: UILabel!
+    @IBOutlet weak var playButton: UIButton!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -85,7 +87,7 @@ class MusicCell: MediaContentCell {
         let imageURL = URL(string: artworkUrl)
         guard let image = imageURL else { return }
         albumImage.af_setImage(withURL: image, placeholderImage: #imageLiteral(resourceName: "placeholder"))
-        songTitleLabel.text = "Song: " + title
+        songTitleLabel.text = title
         artistLabel.text = "Artist: " + artist
         mediaURL = previewUrl
     }
