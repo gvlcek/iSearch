@@ -13,7 +13,6 @@ class HomeTableViewController: BaseTableViewController {
     
     fileprivate var media = [MediaContent]()
     @IBOutlet private weak var searchBar: UISearchBar!
-    @IBOutlet weak var titleBar: UINavigationBar!
     
     fileprivate let tvShowCellIdentifier = "tvShowCell"
     fileprivate let movieCellIdentifier = "movieCell"
@@ -36,7 +35,7 @@ extension HomeTableViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         showLoading()
         if let searchTerm = searchBar.text {
-            ItunesServices.getContent(mediaType: getMediaType(searchBar), searchTerm: searchTerm){ [weak self]
+            ItunesServices.getContent(mediaType: getMediaType(searchBar.selectedScopeButtonIndex), searchTerm: searchTerm){ [weak self]
                 responseObject in
                 guard let strongSelf = self else { return }
                 if let responseObject = responseObject {

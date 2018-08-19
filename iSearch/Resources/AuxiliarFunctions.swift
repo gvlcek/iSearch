@@ -15,8 +15,8 @@ enum ScopeIndexes: Int {
     case movieIndex = 2
 }
 
-func getMediaType(_ searchBar: UISearchBar) -> MediaType {
-    switch searchBar.selectedScopeButtonIndex {
+func getMediaType(_ index: Int) -> MediaType {
+    switch index {
     case ScopeIndexes.musicIndex.rawValue:
         return .music
     case ScopeIndexes.tvShowIndex.rawValue:

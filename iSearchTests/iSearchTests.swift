@@ -11,4 +11,17 @@ import XCTest
 
 class iSearchTests: XCTestCase {
     
+    func testgetMediaType(){
+        var mediaType = getMediaType(0)
+        XCTAssertEqual(mediaType, .music)
+        
+        mediaType = getMediaType(1)
+        XCTAssertEqual(mediaType, .tvShow)
+        
+        mediaType = getMediaType(2)
+        XCTAssertEqual(mediaType, .movie)
+        
+        mediaType = getMediaType(1232324)
+        XCTAssertEqual(mediaType, .tvShow)
+    }
 }
