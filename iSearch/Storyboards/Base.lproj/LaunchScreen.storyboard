@@ -9,11 +9,6 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="OpenSans-ExtraBold.ttf">
-            <string>OpenSans-Extrabold</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
@@ -23,26 +18,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iSearch" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r4n-3Q-dDg">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <fontDescription key="fontDescription" name="OpenSans-Extrabold" family="Open Sans" pointSize="35"/>
-                                <color key="textColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppLogo" translatesAutoresizingMaskIntoConstraints="NO" id="dRE-q0-8ce">
+                                <rect key="frame" x="112" y="268.5" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="8oM-0c-n7g"/>
+                                    <constraint firstAttribute="width" constant="150" id="OcI-kN-5Xz"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="r4n-3Q-dDg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="2Tx-6j-PcR"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="r4n-3Q-dDg" secondAttribute="trailing" id="5M0-gS-BG4"/>
-                            <constraint firstItem="r4n-3Q-dDg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kbS-iV-cab"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="r4n-3Q-dDg" secondAttribute="bottom" id="oqo-n1-oQ6"/>
+                            <constraint firstItem="dRE-q0-8ce" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Fyl-Td-bbP"/>
+                            <constraint firstItem="dRE-q0-8ce" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="v4G-Er-ibx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="AppLogo" width="512" height="512"/>
+    </resources>
 </document>

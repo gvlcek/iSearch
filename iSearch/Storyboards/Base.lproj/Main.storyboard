@@ -42,8 +42,8 @@
                                 </navigationBar>
                                 <searchBar contentMode="redraw" placeholder="Search in iTunes" translucent="NO" showsScopeBar="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f3R-T2-gLG">
                                     <rect key="frame" x="0.0" y="44" width="375" height="100"/>
-                                    <color key="tintColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="barTintColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <textInputTraits key="textInputTraits" spellCheckingType="no" returnKeyType="search" smartInsertDeleteType="no" smartQuotesType="no"/>
                                     <scopeButtonTitles>
                                         <string>Music</string>
