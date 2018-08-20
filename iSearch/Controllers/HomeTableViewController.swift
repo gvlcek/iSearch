@@ -42,6 +42,9 @@ extension HomeTableViewController: UISearchBarDelegate {
                     strongSelf.media = responseObject
                     strongSelf.reloadTableView()
                     strongSelf.hideLoading()
+                } else {
+                    strongSelf.messageBox(titleText: "Error de conexión", messageText: "Intente nuevamente mas tarde")
+                    strongSelf.hideLoading()
                 }
             }
         }
