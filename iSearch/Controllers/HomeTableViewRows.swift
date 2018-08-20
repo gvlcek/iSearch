@@ -16,7 +16,7 @@ protocol MediaContentCellDelegate {
 
 class MediaContentCell: UITableViewCell {
     var delegate: MediaContentCellDelegate?
-    var mediaURL = ""
+    fileprivate var mediaURL = ""
 }
 
 class TvShowCell: MediaContentCell {

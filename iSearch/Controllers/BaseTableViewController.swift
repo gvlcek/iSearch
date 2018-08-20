@@ -25,6 +25,7 @@ class BaseTableViewController: UITableViewController {
         tableView.reloadData()
     }
     
+    //loader activity
     func showLoading() {
         var frame: CGRect?
         frame = UIApplication.shared.keyWindow?.frame
@@ -49,6 +50,15 @@ class BaseTableViewController: UITableViewController {
     
     func hideLoading() {
         loadingView?.isHidden = true
+    }
+    
+    //Alertbox
+    func messageBox(titleText: String, messageText: String){
+        let alert = UIAlertController(title: titleText, message: messageText, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Entendido", style: .default, handler: { (action) in
+            alert.dismiss(animated: true, completion: nil)
+        }))
+        self.present(alert, animated: true, completion: nil)
     }
 }
 

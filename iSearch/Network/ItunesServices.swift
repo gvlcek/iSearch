@@ -31,9 +31,9 @@ class ItunesServices: NSObject {
                 }
                 completionHandler(returnList)
                 break
-            case .failure( _):
+            case .failure(let error):
                 completionHandler(nil)
-                print("Request Error")
+                print(error.localizedDescription)
                 break
             }
         }
